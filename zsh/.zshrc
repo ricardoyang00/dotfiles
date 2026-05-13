@@ -54,3 +54,9 @@ eval "$(zoxide init zsh)"
 
 alias cd="z"
 # Zoxide configuration end
+
+
+# Run a command and notify when finished successfully
+notify() {
+    "$@" && terminal-notifier -message "Task Completed: $1" -sound Blow -title "Terminal"
+}

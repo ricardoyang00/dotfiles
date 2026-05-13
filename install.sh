@@ -22,9 +22,9 @@ else
 fi
 
 # --- 2. Core Dependencies and Apps ---
-echo -e "${BLUE}[INFO] Installing tools (stow, zsh, wezterm)...${NC}"
+echo -e "${BLUE}[INFO] Installing tools (stow, zsh, notifier, wezterm)...${NC}"
 # Installing the WezTerm application itself via Cask
-brew install stow zsh
+brew install stow zsh terminal-notifier
 brew install --cask wezterm
 
 # --- 3. Fonts and Tools ---
