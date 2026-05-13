@@ -58,5 +58,5 @@ alias cd="z"
 
 # Run a command and notify when finished successfully
 notify() {
-    "$@" && terminal-notifier -message "Task Completed: $1" -sound Blow -title "Terminal"
+    "$@" && terminal-notifier -message "Task Completed: $1" -sound Funk -title "Terminal"
 }
