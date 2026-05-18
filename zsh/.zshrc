@@ -15,6 +15,8 @@ if [ -f '/Users/ry/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ry
 if [ -f '/Users/ry/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ry/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+export PATH="$PATH:/Users/ry/develop/flutter/bin"
+export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"
 export PATH=/Users/ry/.local/bin:$PATH
 
 # Added by LM Studio CLI (lms)
