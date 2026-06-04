@@ -23,6 +23,9 @@ export PATH=/Users/ry/.local/bin:$PATH
 export PATH="$PATH:/Users/ry/.lmstudio/bin"
 # End of LM Studio CLI section
 
+# Added by Antigravity IDE
+export PATH="/Users/ry/.antigravity-ide/antigravity-ide/bin:$PATH"
+
 
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
