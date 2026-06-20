@@ -24,7 +24,7 @@ fi
 # --- 2. Core Dependencies and Apps ---
 echo -e "${BLUE}[INFO] Installing tools (stow, zsh, notifier, wezterm)...${NC}"
 # Installing the WezTerm application itself via Cask
-brew install stow zsh terminal-notifier
+brew install stow zsh terminal-notifier tmux
 brew install --cask wezterm
 
 # --- 3. Fonts and Tools ---
@@ -47,6 +47,7 @@ cd "$(dirname "$0")"
 
 stow wezterm
 stow zsh
+stow tmux
 
 # --- 5. Finalizing Shell ---
 echo -e "${BLUE}[INFO] Finalizing shell setup...${NC}"
@@ -64,3 +65,9 @@ if [ "$SHELL" != "$BREW_ZSH" ]; then
 fi
 
 echo -e "${GREEN}[DONE] Installation complete. Please restart your terminal.${NC}"
+
+# Reload tmux configuration if tmux is running
+if command -v tmux &> /dev/null && tmux info &> /dev/null; then
+    echo -e "${BLUE}[INFO] Reloading tmux configuration...${NC}"
+    tmux source ~/.tmux.conf || true
+fi
